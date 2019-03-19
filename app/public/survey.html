@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Friend Finder Survey</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <!-- Jumbotron-->
+  <body>
+    <div class="container">
+      <div class="container">
+        <div class="jumbotron">
+          <h1 class="text-center">
+            Friend-Finder
+          </h1>
+          <hr />
+          <h2 class="text-center">
+            Below are 10 questions that will match you to your new friend! Please rate each question between 1-5 to continue.
+          </h2>
+          <br />
+
+          <!-- User Name and Photo -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"><strong>About You</strong></h3>
+            </div>
+            <div class="panel-body">
+              <h4>Name:</h4>
+              <div class="input-group">
+                <input
+                  id="formName"
+                  class="form-control"
+                  type="text"
+                  name="name"
+                  placeholder="First Last"
+                />
+              </div>
+              <br />
+              <h4>Link to Photo Image</h4>
+              <div class="input-group">
+                <input
+                  id="formImage"
+                  class="form-control"
+                  type="text"
+                  name="name"
+                  placeholder="image url"
+                />
+              </div>
+            </div>
+          </div>
+          <br>
+
+          <!-- Quiz Page Questions Panel -->
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"><strong>Questionnaire</strong></h3>
+            </div>
+            <div class="panel-body">
+              <div class="card">
+                <div class="card-body">
+                  You often dream about propane and propane accessories.
+                </div>
+                <div class="form-group col-11">
+                  <label for="exampleFormControlSelect1">Select</label>
+                  <select
+                    data-placeholder=""
+                    class="quizClass form-control col-3"
+                    id="Q1"
+                  >
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                  </select>
+                </div>
+              </div>
+              <br/>
+
+              <form>
+                <div class="card">
+                  <div class="card-body">
+                    You often find yourself searching for new conspiracy
+                    theories.
+                  </div>
+                  <div class="form-group col-11">
+                    <label for="exampleFormControlSelect1"
+                      >Example select</label
+                    >
+                    <select
+                      data-placeholder=""
+                      class="quizClass form-control col-3"
+                      id="Q2"
+                    >
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                  </select>
+                </div>
+              </div>
+              <br/>
+
+                <div class="card">
+                  <div class="card-body">
+                    Sometimes you feel like nobody around you can understand
+                    what you are saying.
+                  </div>
+                  <div class="form-group col-11">
+                    <label for="exampleFormControlSelect1"
+                      >Select</label
+                    >
+                    <select
+                      data-placeholder=""
+                      class="quizClass form-control col-3"
+                      id="Q3"
+                    >
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                  </select>
+                </div>
+              </div>
+              <br/>
+
+                <div class="card">
+                  <div class="card-body">
+                    You enjoy eating food... maybe too much...
+                  </div>
+                  <div class="form-group col-11">
+                    <label for="exampleFormControlSelect1"
+                      >Select</label
+                    >
+                    <select
+                      data-placeholder=""
+                      class="quizClass form-control col-3"
+                      id="Q4"
+                    >
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                  </select>
+                </div>
+              </div>
+              <br/>
+
+                <div class="card">
+                  <div class="card-body">
+                    You enjoy giving/teaching life lessons.
+                  </div>
+                  <div class="form-group col-11">
+                    <label for="exampleFormControlSelect1"
+                      >Select</label
+                    >
+                    <select
+                      data-placeholder=""
+                      class="quizClass form-control col-3"
+                      id="Q5"
+                    >
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                  </select>
+                </div>
+              </div>
+              <br/>
+
+                <div class="card">
+                  <div class="card-body">
+                    You live by yourself mostly.
+                  </div>
+                  <div class="form-group col-11">
+                    <label for="exampleFormControlSelect1"
+                      >Select</label
+                    >
+                    <select
+                      data-placeholder=""
+                      class="quizClass form-control col-3"
+                      id="Q6"
+                    >
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                  </select>
+                </div>
+              </div>
+              <br/>
+
+                <div class="card">
+                  <div class="card-body">
+                    How well kept is your lawn?
+                  </div>
+                  <div class="form-group col-11">
+                    <label for="exampleFormControlSelect1"
+                      >Select</label
+                    >
+                    <select
+                      data-placeholder=""
+                      class="quizClass form-control col-3"
+                      id="Q7"
+                    >
+                    <option></option>
+                    <option>1 (What Lawn?)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Well Kept)</option>
+                  </select>
+                </div>
+              </div>
+              <br/>
+
+                <div class="card">
+                  <div class="card-body">
+                    Do you consider yourself fluent in another language?
+                  </div>
+                  <div class="form-group col-11">
+                    <label for="exampleFormControlSelect1"
+                      >Select</label
+                    >
+                    <select
+                      data-placeholder=""
+                      class="quizClass form-control col-3"
+                      id="Q8"
+                    >
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                  </select>
+                </div>
+              </div>
+              <br/>
+
+                <div class="card">
+                  <div class="card-body">
+                    Your job is your life.
+                  </div>
+                  <div class="form-group col-11">
+                    <label for="exampleFormControlSelect1"
+                      >Select</label
+                    >
+                    <select
+                      data-placeholder=""
+                      class="quizClass form-control col-3"
+                      id="Q9"
+                    >
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                  </select>
+                </div>
+              </div>
+              <br/>
+
+                <div class="card">
+                  <div class="card-body">
+                    You like pets.
+                  </div>
+                  <div class="form-group col-11">
+                    <label for="exampleFormControlSelect1"
+                      >Select</label
+                    >
+                    <select
+                      data-placeholder=""
+                      class="quizClass form-control col-3"
+                      id="Q10"
+                    >
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                  </select>
+                </div>
+              </div>
+              <br/>
+
+              <!-- Submit Button -->
+                <button
+                  id="submitButton"
+                  class="btn btn-primary col-2 text-center offset-5"
+                  data-target="#myModal"
+                  type="button"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+
+            <br />
+
+            <!-- Footer -->
+            <footer class="footer">
+              <p>
+                <a href="/api/friends">API Friends List</a> |
+                <a href="/">Home</a>
+              </p>
+            </footer>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="myModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Your new friend is: 
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                  <div class="modal-body" style="margin: auto;">
+                    <h2 id="matchName"></h2>
+                    <img
+                      id="matchImg"
+                      src=""
+                      alt="Image Not Found"
+                      style="max-width: 350px;"
+                    />
+                  </div>
+
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    > Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+
+        <!-- BootStrap -->
+        <script
+          src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"
+        ></script>
+
+        <!-- JavaScript logic -->
+        <script>
+          var fieldsFilled;
+
+          $(document).ready(function() {
+            // Submit Button function
+            $("#submitButton").on("click", function() {
+              isComplete(function() {
+                if (fieldsFilled) {
+                  createNewFriend();
+                } else {
+                  alert("Please complete all fields before submitting!");
+                }
+              });
+            });
+          });
+
+          // Makes sure all input fields are complete
+          function isComplete(callback) {
+            var questionsCompleted;
+            $(".quizClass")
+              .each(function() {
+                if ($(this).val() == "") {
+                  questionsCompleted = false;
+                }
+              })
+              .promise()
+              .then(function() {
+                if (questionsCompleted == false) {
+                  fieldsFilled = false;
+                } else if (
+                  $("#formName")
+                    .val()
+                    .trim() == ""
+                ) {
+                  fieldsFilled = false;
+                } else if (
+                  $("#formImage")
+                    .val()
+                    .trim() == ""
+                ) {
+                  fieldsFilled = false;
+                } else {
+                  fieldsFilled = true;
+                }
+                callback();
+              });
+          }
+
+          // Makes a new friend object if all fields complete
+          function createNewFriend() {
+            var newFriend = {
+              name: $("#formName")
+                .val()
+                .trim(),
+              photo: $("#formImage")
+                .val()
+                .trim(),
+              scores: []
+            };
+
+            // Loop through Questions to get scores
+            var scoresArray = [];
+            $(".quizClass")
+              .each(function() {
+                scoresArray.push(parseInt($(this).val()));
+              })
+              .promise()
+              .then(function() {
+                // Push the array of scores to the new friend object
+                newFriend.scores = scoresArray;
+
+                // Posts newFriend and displays best match/Modal
+                var currentURL = window.location.origin;
+                $.post(currentURL + "/api/friends", newFriend, function(data) {
+                  $("#matchName").text(data.name);
+                  $("#matchImg").attr("src", data.photo);
+                  $("#myModal").modal("toggle");
+                });
+              });
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
