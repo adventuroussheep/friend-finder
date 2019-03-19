@@ -7,7 +7,7 @@ function apiRoutes(app) {
   });
 
 
-  // POST Route, also handles game logic/friend comparisons
+  // POST Route, also compares friends scores
   app.post("/api/friends", function(req, res) {
     var newFriend = {
       name: req.body.name,

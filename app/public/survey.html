@@ -21,7 +21,7 @@
       <div class="container">
         <div class="jumbotron">
           <h1 class="text-center">
-            Friend-Finder
+            Friend Finder
           </h1>
           <hr />
           <h2 class="text-center">
@@ -46,7 +46,7 @@
                 />
               </div>
               <br />
-              <h4>Link to Photo Image</h4>
+              <h4>Link to Photo Image:</h4>
               <div class="input-group">
                 <input
                   id="formImage"
@@ -60,11 +60,15 @@
           </div>
           <br>
 
-          <!-- Quiz Page Questions Panel -->
+  
+
           <div class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title"><strong>Questionnaire</strong></h3>
             </div>
+
+            <form>
+              <!-- Question 1 -->
             <div class="panel-body">
               <div class="card">
                 <div class="card-body">
@@ -88,7 +92,8 @@
               </div>
               <br/>
 
-              <form>
+              
+              <!-- Question 2 -->
                 <div class="card">
                   <div class="card-body">
                     You often find yourself searching for new conspiracy
@@ -96,7 +101,7 @@
                   </div>
                   <div class="form-group col-11">
                     <label for="exampleFormControlSelect1"
-                      >Example select</label
+                      >Select</label
                     >
                     <select
                       data-placeholder=""
@@ -114,6 +119,7 @@
               </div>
               <br/>
 
+              <!-- Question 3 -->
                 <div class="card">
                   <div class="card-body">
                     Sometimes you feel like nobody around you can understand
@@ -139,6 +145,7 @@
               </div>
               <br/>
 
+              <!-- Question 4 -->
                 <div class="card">
                   <div class="card-body">
                     You enjoy eating food... maybe too much...
@@ -163,6 +170,7 @@
               </div>
               <br/>
 
+              <!-- Question 5 -->
                 <div class="card">
                   <div class="card-body">
                     You enjoy giving/teaching life lessons.
@@ -187,6 +195,7 @@
               </div>
               <br/>
 
+              <!-- Question 6 -->
                 <div class="card">
                   <div class="card-body">
                     You live by yourself mostly.
@@ -211,6 +220,7 @@
               </div>
               <br/>
 
+              <!-- Question 7 -->
                 <div class="card">
                   <div class="card-body">
                     How well kept is your lawn?
@@ -235,6 +245,7 @@
               </div>
               <br/>
 
+              <!-- Question 8 -->
                 <div class="card">
                   <div class="card-body">
                     Do you consider yourself fluent in another language?
@@ -259,6 +270,7 @@
               </div>
               <br/>
 
+              <!-- Question 9 -->
                 <div class="card">
                   <div class="card-body">
                     Your job is your life.
@@ -283,6 +295,7 @@
               </div>
               <br/>
 
+              <!-- Question 10 -->
                 <div class="card">
                   <div class="card-body">
                     You like pets.
@@ -352,7 +365,7 @@
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-
+                  <!-- Modal Body -->
                   <div class="modal-body" style="margin: auto;">
                     <h2 id="matchName"></h2>
                     <img
@@ -362,7 +375,6 @@
                       style="max-width: 350px;"
                     />
                   </div>
-
                   <div class="modal-footer">
                     <button
                       type="button"
@@ -398,7 +410,7 @@
                 if (fieldsFilled) {
                   createNewFriend();
                 } else {
-                  alert("Please complete all fields before submitting!");
+                  alert("Please answer all questions to continue!");
                 }
               });
             });
@@ -456,7 +468,6 @@
               })
               .promise()
               .then(function() {
-                // Push the array of scores to the new friend object
                 newFriend.scores = scoresArray;
 
                 // Posts newFriend and displays best match/Modal
