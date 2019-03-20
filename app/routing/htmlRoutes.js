@@ -1,5 +1,4 @@
-var path = require('path');
-
+const path = require('path');
 
 // HTML Routes
 function htmlRoutes(app) {

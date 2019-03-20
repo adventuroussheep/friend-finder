@@ -1,4 +1,4 @@
-var friends = require("../data/friends.js");
+const friends = require("../data/friends.js");
 
 // API Route
 function apiRoutes(app) {
@@ -24,13 +24,13 @@ function apiRoutes(app) {
     // Loops through friend array to calculate scores
     var comparisonArr = [];
     for (var i = 0; i < friends.length; i++) {
-      var currentComparison = 0;
+      var compare = 0;
       for (var j = 0; j < newFriend.scores.length; j++) {
-        currentComparison += Math.abs(
+        compare += Math.abs(
           newFriend.scores[j] - friends[i].scores[j]
         );
       }
-      comparisonArr.push(currentComparison);
+      comparisonArr.push(compare);
     }
 
 
